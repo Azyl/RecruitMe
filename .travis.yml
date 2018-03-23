@@ -7,3 +7,12 @@ script: ./mvnw clean install
 cache:
   directories:
   - $HOME/.m2
+
+addons:
+  sonarcloud:
+    organization: "azyl-github" # the key of the org you chose at step #3
+    token:
+      secure: SONAR_TOKEN # encrypted value of your token
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
