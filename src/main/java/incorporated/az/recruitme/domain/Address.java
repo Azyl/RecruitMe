@@ -1,4 +1,4 @@
-package incorporated.az.recruitme.Domain;
+package incorporated.az.recruitme.domain;
 
 
 import lombok.Data;

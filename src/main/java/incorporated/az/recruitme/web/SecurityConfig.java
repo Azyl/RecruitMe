@@ -1,4 +1,4 @@
-package incorporated.az.recruitme.Web;
+package incorporated.az.recruitme.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -43,6 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //    }
 
     @Bean
+    @Override
     public UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 

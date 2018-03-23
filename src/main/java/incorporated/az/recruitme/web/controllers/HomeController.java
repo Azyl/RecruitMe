@@ -1,4 +1,4 @@
-package incorporated.az.recruitme.Web.Controllers;
+package incorporated.az.recruitme.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
