@@ -1,7 +1,7 @@
 package incorporated.az.recruitme.web.controllers;
 
 
-import com.jayway.jsonpath.internal.Path;
+
 import incorporated.az.recruitme.domain.Address;
 import incorporated.az.recruitme.web.repositories.AddressesRepository;
 import io.swagger.annotations.Api;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 
-@Api(value = "users", description = "Endpoint for user management")
+@Api(value = "users")
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/api/adresses")
 public class RestController {
@@ -24,7 +24,9 @@ public class RestController {
     @ApiOperation(value = "returns adresses lists")
     @GetMapping("/adresses")
     public List<Address> retrieveAllStudents() {
+
         return addressesRepository.findAll();
+
     }
 
 }

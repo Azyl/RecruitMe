@@ -1,7 +1,6 @@
 package incorporated.az.recruitme.domain;
 
 
-import io.swagger.annotations.Api;
 import lombok.Data;
 
 import javax.persistence.Entity;
