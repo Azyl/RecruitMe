@@ -1,12 +1,14 @@
 package incorporated.az.recruitme.domain;
 
 
+import io.swagger.annotations.Api;
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.Size;
+
 
 @Data
 @Entity
